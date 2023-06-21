@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.938);
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(img1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card .item {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.24), rgba(6, 3, 167, 0.493));
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(350px);
+    transition: 700ms ease-in-out;
+    opacity: 0;
+}
+
+.card:hover .item {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.card .item .items-pro {
+    position: absolute;
+    bottom: 30%;
+}
+
+.blue-text {
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.card .body-card {
+    display: flex;
+    gap: 20px;
+    place-items: center;
+}
+
+.card .body-card i {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card .body-card i:nth-child(2) {
+    background-color: rgb(0, 0, 0);
+}
+
+.card .body-card i:nth-child(3) {
+    background-color: rgb(255, 255, 255);
+}
+
+.card .body-card i:nth-child(4) {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.664), rgba(255, 255, 255, 0.562));
+}
+
+.card .footer-card {
+    display: flex;
+    gap: 50px;
+}
